@@ -1,0 +1,51 @@
+	{
+	  "GLOBALEVENTID" : "478000586",
+	  "Date" : {
+	    "SQLDATE" : "20141022",
+	    "MonthYear" : "201410",
+	    "Year" : "2014",
+	    "FractionDate" : "2014.8000"
+	  },
+	  "Actor1" : {
+	    "Geo" : {
+	      "Type" : "0"
+	    }
+	  },
+	  "Actor2" : {
+	    "Code" : "CRM",
+	    "Name" : "CRIMINAL",
+	    "Type1Code" : "CRM",
+	    "Geo" : {
+	      "Type" : "4",
+	      "FullName" : "Bangkok, Krung Thep Mahanakhon, Thailand",
+	      "CountryCode" : "TH",
+	      "ADM1Code" : "TH40",
+	      "Lat" : "13.75",
+	      "Long" : "100.517",
+	      "FeatureID" : "-3250083"
+	    }
+	  },
+	  "Event" : {
+	    "IsRootEvent" : "0",
+	    "EventCode" : "042",
+	    "EventBaseCode" : "042",
+	    "EventRootCode" : "04",
+	    "QuadClass" : "1",
+	    "GoldsteinScale" : "1.9",
+	    "NumMentions" : "9",
+	    "NumSources" : "1",
+	    "NumArticles" : "9",
+	    "AvgTone" : "-5.61299852289513"
+	  },
+	  "ActionGeo" : {
+	    "Type" : "4",
+	    "FullName" : "Bangkok, Krung Thep Mahanakhon, Thailand",
+	    "CountryCode" : "TH",
+	    "ADM1Code" : "TH40",
+	    "Lat" : "13.75",
+	    "Long" : "100.517",
+	    "FeatureID" : "-3250083"
+	  },
+	  "DATEADDED" : "20151022",
+	  "SOURCEURL" : "Bangkok Post website, Bangkok/BBC Monitoring/(c) BBC"
+	}
