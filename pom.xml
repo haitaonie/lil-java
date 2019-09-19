@@ -5,18 +5,39 @@
 	<artifactId>lil.json</artifactId>
 	<packaging>jar</packaging>
 	<version>20180130</version>
-	<name>lil-json</name>
+	<name>lil-java</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<compiler.version>1.8</compiler.version>
+		<tycho-version>0.22.0</tycho-version>
 	</properties>
-
 
 
 	<build>
 		<plugins>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${compiler.version}</source>
+					<target>${compiler.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>3.1.0</version>
@@ -27,15 +48,48 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>make-assembly</id> <!-- this is used for inheritance merges -->
-						<phase>package</phase> <!-- bind to the packaging phase -->
+						<id>make-assembly</id>
+						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
 						</goals>
 					</execution>
 				</executions>
 			</plugin>
+
+
 		</plugins>
 	</build>
 
+
+
+	<dependencies>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.8.1</version>
+    <scope>test</scope>
+</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+	</dependencies>
 </project>
